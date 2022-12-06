@@ -8,6 +8,7 @@ import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import{HttpClientModule} from '@angular/common/http';
 const myRoute:Routes=[{
 path:"",
 component:AddemployeeComponent
@@ -26,7 +27,8 @@ component:AddemployeeComponent
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
