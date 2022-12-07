@@ -24,6 +24,33 @@ export class AddemployeeComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status == "success") {
+
+          alert("Course added successfully")
+
+          this.code=""
+
+          this.name=""
+
+          this.designation=""
+
+          this.salary=""
+
+          this.cmpname=""
+
+          this.mobileno=""
+
+          this.username=""
+
+          this.password=""
+
+         
+
+        }else{
+
+          alert("Something went wrong")
+
+        }
       }
     )
   }
