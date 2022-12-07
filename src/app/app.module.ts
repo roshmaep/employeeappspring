@@ -9,19 +9,24 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import{HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
 const myRoute:Routes=[{
 path:"",
 component:AddemployeeComponent
 },{
   path:"view",
   component:ViewemployeeComponent
+},{
+  path:"search",
+  component:SearchComponent
 }]
 @NgModule({
   declarations: [
     AppComponent,
     AddemployeeComponent,
     ViewemployeeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
